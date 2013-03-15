@@ -1,0 +1,119 @@
+\documentclass{beamer}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\newtheorem{definicion}{Definicion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Beamer]{Beamer}
+\author[cpcroberto]{Roberto Carlos Palenzuela Criado}
+\date[\today]{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usetheme{Madrid}
+\usecolortheme[RGB={122,59,122}]{structure}
+\setbeamercovered{transparent}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introducción}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{¿Que es Beamer?}
+  \begin{definicion}
+    Beamer es una clase de \LaTeX{} para la creación de presentaciones.
+  \end{definicion}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{¿Que es Beamer?}
+  \begin{block}{Características}
+    \begin{itemize}[<+->]
+      \item {\large Todas las ventajas heredadas de \LaTeX{}.} \\
+            {\footnotesize Separación de contenido y estilo, programable, estándar,
+            ligero, excelente calidad tipográfica, gestión automática de referencias,
+            etc.}
+      \item {\large Presentacion en PDF.}\\
+            {\footnotesize Estándar, portable, etc.}
+      \item {\large Estilos predefinidos elegantes y con herramientas útiles.}\\
+            {\footnotesize Cabeceras y pies de página informativos, botones de 
+            navegación, tablas de contenidos, etc.}
+      \item {\large Fácil generación de overlays y efectos dinámicos.}
+      \item {\large Software libre y gratuito, con una amplísima comunidad de soporte.}
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Fórmulas matemáticas en Beamer}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Fórmulas matemáticas en Beamer}
+  \begin{block}{}
+    En Beamer, además de poder utilizar todo el potencial de \LaTeX{} en lo que 
+    se refiere a fórmulas matemáticas, tenemos a nuestra disposición amplias 
+    posibilidades para la animación de diapositivas.
+  \end{block}
+  \vspace{1 true cm}
+  \begin{block}{}
+   A continuación veremos algunos ejemplos de fórmulas matemáticas y animaciones 
+   con Beamer.
+  \end{block}
+  
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Ejemplos}
+  
+  \begin{itemize}[<+->]
+    \item $a + \left(\frac{b}{c}\right)= \frac{ac+b}{c}$
+    \item $\sideset{_{a}^{b}}{_{c}^{d}}\prod$
+    \item $\int_{x=0}^{\infty} x\,\text{e}^{-x^2}\text{d}x=\frac{1}{2},\quad\text{e}^{i\pi}+1=0$
+    \item $2\sqrt{2}\,,\quad 2^2\sqrt{2-\sqrt{2}}\,,\quad 2^3\sqrt{2-\sqrt{2+\sqrt{2}}}\,,\;\ldots$
+    \item $\sqrt 2 = 1+\frac{1}{2+\frac{1}{2+\frac{1}{\ddots}}}$
+  \end{itemize}
+\end{frame}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\begin{frame}
+  \frametitle{Bibliografía}
+  \bibliographystyle{plain}
+  \bibliography{mibiblio}
+  \nocite{*}
+\end{frame}  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+
+
+
+
+
